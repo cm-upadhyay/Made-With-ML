@@ -16,7 +16,6 @@ try:
 except OSError:
     EFS_DIR = Path(ROOT_DIR, "efs")
     Path(EFS_DIR).mkdir(parents=True, exist_ok=True)
-
 # Config MLflow
 MODEL_REGISTRY = Path(f"{EFS_DIR}/mlflow")
 Path(MODEL_REGISTRY).mkdir(parents=True, exist_ok=True)
